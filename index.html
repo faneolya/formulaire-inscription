@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulaire d'inscription</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #C1C6D4">
+  <form>
+    <div class="container">
+      <h4 style="color: blue">FORMULAIRE D'INSCRIPTION</h4>
+      <h6>Veuillez remplir soigneusement le formulaire d'inscription</h6><br>
+      <label for="avatar">Photo d'identité<em>*</em></label>
+      <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" required="required"><br>
+      <br>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <label for="nom" class="form-label">Nom <em>*</em></label>
+          <input id="nom" class="form-control" type="text" name="" placeholder="Entrer votre nom"required>
+        </div>
+        <div class="col">
+          <label for="prenom" class="form-label">Prénom</label>
+          <input id="prenom" class="form-control" type="text" name="" placeholder="Entrer votre prénom">
+        </div>
+      </div><br>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <label for="genre">Genre<em>*</em></label>
+          <input type="radio" name="sexe" id="homme" required>
+          <label for="homme">Homme</label>
+          <input type="radio" name="sexe" id="femme" required>
+          <label for="femme">Femme</label>
+        </div>
+        <div class="col" class="form-control">
+          <label for="DDN" style="margin-right: 10px" class="form-label">Date de naissance<em>*</em></label>
+          <input type="date" id="DDN" min="1990-01-01" name="the_date" class="form-control" required>
+        </div>
+        <div class="col">
+          <label for="LDN" style="margin-right: 10px" class="form-label">Lieu de naissance<em>*</em></label>
+          <input type="text" id="LDN" name="nom" placeholder="Lieu de naissance" class="form-control" required>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="container">
+      <div class="row">
+        <label class="form-label"></label>
+        <div class="col">
+          <label for="AE" style="margin-right: 10px" class="form-label">Ancien établissement<em>*</em></label>
+          <input type="text" id="AE" name="nom" placeholder="Ancien établissement" class="form-control" required>
+        </div>
+        <div class="col">
+          <label for="Classe" class="form-label">Classe<em>*</em></label>
+          <select name="" id="Classe" class="form-control" required>
+            <option>---Sélectionner la classe---</option>
+            <option value="">1ère année</option>
+            <option value="">2ème année</option>
+            <option value="">3ème année</option>
+            <option value="">4ème année</option>
+            <option value="">5ème année</option>
+          </select>
+        </div><br><br>
+      </div>
+      <div class="col">
+        <label for="AS" style="margin-right: 10px" class="form-label">Année Scolaire<em>*</em></label>
+        <SELECT name="nom" size="1" class="form-control" required>
+          <option>---Sélectionner l'année---</option>
+          <OPTION>2018-2019
+          <OPTION>2019-2020
+          <OPTION>2020-2021
+          <OPTION>2021-2022
+          <OPTION>2022-2023
+          <OPTION>2023-2024
+          <OPTION>2024-2025
+          <OPTION>2025-2026
+        </SELECT><br>
+      </div><br>
+      <div class="row">
+        <label class="form-label"></label>
+        <div class="col">
+          <label for="Domicile" style="margin-right: 10px" class="form-label">Domicile<em>*</em></label>
+          <input type="text" id="Domicile" name="nom" placeholder="Domicile" class="form-control" required>
+        </div>
+        <div class="col">
+          <label for="email" style="margin-right: 10px" class="form-label">Votre e-mail<em>*</em></label>
+          <input type="email" id="email" name="email" placeholder="monadresse@mail.com" class="form-control" required>
+        </div><br>
+        <br><br>
+        <div class="row">
+          <div class="col">
+            <label for="NDT" style="margin-right: 10px" class="form-label">Nom du tuteur<em>*</em></label>
+            <input type="text" id="NDT" name="nom" placeholder="Nom du tuteur" class="form-control" required>
+          </div>
+          <div class="col">
+            <label for="CDT" style="margin-right: 10px" class="form-label">Contact du tuteur<em>*</em></label>
+            <input type="text" id="CDT" name="nom" placeholder="Contact du tuteur" class="form-control" required>
+          </div><br>
+          <br>
+        </div>
+      </div><br>
+      <div>
+        <button style="background-color: blue" class="btn btn-primary">S'inscrire</button>
+      </div>
+  </form>
+ 
+</body>
+
+</html>
